@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(31, 31, 31);
+}
+                                   /* PRESENTACION */
+.cabezera{
+    height: 15em;
+    background-color: rgb(0, 102, 255);
+    display: flex;
+}
+.container__perfil{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.perfil-imagen{
+    height:10em;
+    filter: opacity(0.3);
+}
+.cabezera h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+                                  /* REDES */
+.redes__container{
+    display: flex;
+    text-align: center;
+}
+.redes{
+    margin: auto;
+}
+.redes h2{
+    padding: 60px 0 0 0;
+}
+.redes__links a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(0, 102, 255);
+    font-size: xx-large;
+}
+                              /* EXPERIENCIA */
+.info__container{
+    display: flex;
+}
+.info__imagenes{
+    margin: auto;
+}
+.info__imagenes h2{
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+.info__imagenes img{
+    height: 10em;
+}
+                                /* EXPERIENCIA-PROYECTOS */
+.padre{
+    margin: auto;
+    min-width: min-content;
+    max-width: 60em;
+}
+.titulo{
+    text-align: center;
+    padding: 60px 0 20px 0 ;
+
+}
+.descripcion{
+    text-align: center;
+    text-wrap: 1;
+    padding-bottom: 20px;
+}
+                                /* CONTACTO */
+.formulario{
+    height: 30em;
+    width: max-content;
+    margin: auto;
+}
+.field {
+    margin-bottom: 10px;
+  } 
+.field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}    
+.field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+}    
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+}
+                             /* RESPONSIVE TABLET Y CELULAR */
+@media screen and (max-width:768px){
+    .info__imagenes img{
+        height: 8em;
+    }
+}
+@media screen and (max-width:425px){
+    body{
+        font-size: small;
+    }
+    .perfil-imagen{
+        height: 7em;
+        padding: 1em 0;
+    }
+    .cabezera{
+        height: min-content;
+    }
+    .info__imagenes img{
+        height: 5.5em;
+    }
+}
+
